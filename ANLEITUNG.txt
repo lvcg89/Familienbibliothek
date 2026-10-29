@@ -1,0 +1,18 @@
+UNSERE FAMILIENBIBLIOTHEK – ERSTE PWA-TESTVERSION
+
+1. Auf github.com ein kostenloses Konto erstellen (falls noch nicht vorhanden).
+2. Ein öffentliches Repository namens familienbibliothek anlegen.
+3. Die vier Dateien index.html, manifest.webmanifest, icon.svg und sw.js aus diesem Ordner in das Repository hochladen (Add file > Upload files > Commit changes).
+4. Unter Settings > Pages > Build and deployment > Deploy from a branch wählen, Branch main und Ordner /(root) auswählen, speichern.
+5. Die dort angezeigte HTTPS-Adresse in Safari auf dem iPhone öffnen.
+6. In Safari auf Teilen > Zum Home-Bildschirm > Hinzufügen tippen (ggf. Als Web-App öffnen aktivieren).
+7. ZUERST ein Testbuch anlegen, App schließen, erneut öffnen und prüfen, ob es noch da ist.
+8. Unter Einstellungen > Sicherung herunterladen eine JSON-Sicherung erstellen und deren Wiederherstellung mit Testdaten prüfen.
+
+WICHTIG: Der öffentliche GitHub-Code enthält keine privaten Buchdaten. Diese liegen lokal auf dem jeweiligen Gerät. Bitte keine persönlichen Buchdaten in das GitHub-Repository hochladen.
+
+Diese erste Version enthält noch KEINE Barcode-Kameraerkennung und KEINE Online-Coversuche. Sie konzentriert sich auf zuverlässige manuelle Katalogisierung, Suche, Standorte, Ausleihen, Geschenke und Datensicherung.
+
+Die Speicherung erfolgt in localStorage des Web-App-Kontexts. Sie ist nicht garantiert dauerhaft: Löschen von Websitedaten, Neuinstallation oder Geräteverlust kann die Daten entfernen. Regelmäßige Sicherungen sind notwendig. Für besonders hohe Zuverlässigkeit wäre in einer Folgeversion IndexedDB und ein getesteter Backup-Workflow sinnvoll.
+
+Keine automatische Synchronisierung zwischen Geräten. Die App kann ohne Anmeldung verwendet werden, solange die Hosting-Dateien erreichbar sind und der Browser sie unterstützt.
